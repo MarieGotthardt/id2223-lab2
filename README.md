@@ -23,3 +23,5 @@ Second Lab Assignment within the course ID2223 *Scalable Machine Learning and De
 Samuel Härner\
 Marie Gotthardt
 
+## References
+

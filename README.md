@@ -2,7 +2,7 @@
 Second Lab Assignment within the course ID2223 *Scalable Machine Learning and Deep Learning*.
 
 ## Description of our System
-In this assignment, we fine-tuned a pre-trained transformer model (Whisper small) for Swedish speech recognition, following this blogpost: [Fine-Tune Whisper For Multilingual ASR with 🤗 Transformers] (https://huggingface.co/blog/fine-tune-whisper) by Sanchit Gandhi. Furthermore, we created a serverless UI that utilizes our model. Our system consists of the following pipelines:
+In this assignment, we fine-tuned a pre-trained transformer model (Whisper small) for Swedish speech recognition, following this blogpost: [Fine-Tune Whisper For Multilingual ASR with 🤗 Transformers](https://huggingface.co/blog/fine-tune-whisper) by Sanchit Gandhi. Furthermore, we created a serverless UI that utilizes our model. Our system consists of the following pipelines:
 
 - Feature Pipeline (only required CPU)
 - Training Pipeline (required GPU)
@@ -33,5 +33,5 @@ Samuel Härner\
 Marie Gotthardt
 
 ## References
-[Blogpost: Fine-Tune Whisper For Multilingual ASR with 🤗 Transformers] (https://huggingface.co/blog/fine-tune-whisper)
+[Blogpost: Fine-Tune Whisper For Multilingual ASR with 🤗 Transformers](https://huggingface.co/blog/fine-tune-whisper)
 

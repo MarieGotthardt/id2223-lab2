@@ -20,5 +20,6 @@ Second Lab Assignment within the course ID2223 *Scalable Machine Learning and De
 ## Dependencies and Installing (not sure if necessary)
 
 ## Authors
-Marie Gotthardt\
-Samuel Härner
+Samuel Härner\
+Marie Gotthardt
+

@@ -29,7 +29,7 @@ class SongGuesser:
 def get_shingles(text, shingle_size):
     return set(text[i:i+shingle_size] for i in range(len(text) - shingle_size + 1))
 
-def create_minhash(shingles, num_perm=256):
+def create_minhash(shingles, num_perm=128):
     m = MinHash(num_perm=num_perm)
     for shingle in shingles:
         m.update(shingle.encode('utf8'))

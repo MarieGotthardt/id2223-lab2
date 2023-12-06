@@ -14,6 +14,7 @@ As part of the model-centric optimization, we experimented with the following te
 - adding dropout (dropout = 0.1)
 - using different learning rates (learning rate = 1e-4, 1e-5)
 - using different learning rate schedulers (linear learning rate scheduler, cosine with hard restarts scheduler)
+- using different numbers of warmup steps (10, 200)
 
 // TODO: maybe create table with the different settings and results for these settings
 

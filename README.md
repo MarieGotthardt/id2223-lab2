@@ -10,6 +10,7 @@ In this assignment, we fine-tuned a pre-trained transformer model (Whisper small
 
 ## Experiments for Performance Optimization
 In order to improve the performance of our model, we performed experiments with model-centric optimization techniques and with data-centric optimization techniques. 
+
 As part of the model-centric optimization, we experimented with the following techniques:
 - adding dropout (dropout = 0.1)
 - using different learning rates (learning rate = 1e-4, 1e-5)
@@ -18,8 +19,12 @@ As part of the model-centric optimization, we experimented with the following te
 
 // TODO: maybe create table with the different settings and results for these settings
 
-  
-- data-centric approach (data augmentation)
+For the data-centric approach, we performed an experiment with a combination of the following data augmentations:
+- Gaussian noise
+- Time stretch
+- Pitch shift
+
+based on the article [Fine-Tuning Whisper ASR Models](https://wandb.ai/parambharat/whisper_finetuning/reports/Fine-Tuning-Whisper-ASR-Models---VmlldzozMTEzNDE5) by Bharat Ramanathan.
 
 ## Utilization of our Model: Recognition of Swedish Christmas Songs
 To demonstrate how users could utilize our fine-tuned model to automatically create transcriptions for Swedish, we created an app that can automatically identify Swedish Christmas songs based on the created transcriptions.  
@@ -34,5 +39,6 @@ Samuel Härner\
 Marie Gotthardt
 
 ## References
-[Blogpost: Fine-Tune Whisper For Multilingual ASR with 🤗 Transformers](https://huggingface.co/blog/fine-tune-whisper)
+[Blogpost: Fine-Tune Whisper For Multilingual ASR with 🤗 Transformers](https://huggingface.co/blog/fine-tune-whisper) \
+[Article: Fine-Tuning Whisper ASR Models](https://wandb.ai/parambharat/whisper_finetuning/reports/Fine-Tuning-Whisper-ASR-Models---VmlldzozMTEzNDE5)
 

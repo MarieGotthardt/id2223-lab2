@@ -4,8 +4,8 @@ Second Lab Assignment within the course ID2223 *Scalable Machine Learning and De
 ## Description of our System
 In this assignment, we fine-tuned a pre-trained transformer model (Whisper small) for Swedish speech recognition, following this blogpost: [Fine-Tune Whisper For Multilingual ASR with 🤗 Transformers](https://huggingface.co/blog/fine-tune-whisper) by Sanchit Gandhi. Furthermore, we created a serverless UI that utilizes our model. Our system consists of the following pipelines:
 
-- Feature Pipeline (only required CPU)
-- Training Pipeline (required GPU)
+- Feature Pipeline (only requires CPU)
+- Training Pipeline (requires GPU)
 - Inference Pipeline
 
 ## Experiments for Performance Optimization
@@ -26,7 +26,9 @@ To demonstrate how users could utilize our fine-tuned model to automatically cre
 
 ## Discussion of our Approach
 One technical challenge we had to face during training was our limited GPU access, as we needed a GPU to train our model. To counter this problem, we regularly checkpointed our model weights so we could resume model training from these checkpoints in case we lost access to our GPU. Nevertheless, this circumstance limited the extent to which we could perform experiments for model optimization. 
-- maybe mention here also that we only use a selection of Swedish Christmas songs?
+
+One limitation to consider regarding the app we created to automatically identify Swedish Christmas songs is that we only used a selection of Swedish Christmas songs. Thus, if a user sings a song not included in our selection, our app is not able to identify it correctly. 
+
 ## Dependencies and Installing (not sure if necessary)
 
 ## Authors

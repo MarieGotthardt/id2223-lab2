@@ -14,6 +14,7 @@ To be able to compare our experimental results, we created a baseline model with
 
 - lr = 1e-5, scheduler: linear, warmup steps = 200, dropout = 0.0, training steps = 1000: **WER** = 63.24 
 
+### Model-centric Optimization
 As part of the model-centric optimization, we experimented with the following techniques:
 - adding dropout (dropout = 0.1)
 - using different learning rates (learning rate = 1e-4, 1e-5)
@@ -27,6 +28,7 @@ As part of the model-centric optimization, we experimented with the following te
 - lr = 1e-4. lr scheduler: cosine with hard restarts, warmup steps = 200, dropout = 0.0, training steps = 1000: **WER** = 103.39
 - lr = 1e-4, lr scheduler: linear, warum steps = 10, dropout = 0.1, training steps = 800: **WER** = 27.87
 
+### Data-centric Optimization
 For the data-centric approach, we performed an experiment with a combination of the following data augmentations:
 - Gaussian noise
 - Time stretch

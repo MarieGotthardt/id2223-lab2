@@ -83,5 +83,6 @@ Marie Gotthardt
 [Blogpost: Fine-Tune Whisper For Multilingual ASR with 🤗 Transformers](https://huggingface.co/blog/fine-tune-whisper) \
 [Article: Fine-Tuning Whisper ASR Models](https://wandb.ai/parambharat/whisper_finetuning/reports/Fine-Tuning-Whisper-ASR-Models---VmlldzozMTEzNDE5) \
 [Documentation: MinHash in datasketch library](https://ekzhu.com/datasketch/minhash.html) \
-[Article: Jaccard similarity](https://en.wikipedia.org/wiki/Jaccard_index) 
+[Article: Jaccard similarity](https://en.wikipedia.org/wiki/Jaccard_index) \
+[Website: Swedish Christmas songs (julsånger.se)](https://www.xn--julsnger-d0a.se/)
 

@@ -32,7 +32,7 @@ To demonstrate how users could utilize our fine-tuned model to automatically cre
 The identification of songs was done by using [MinHashing](https://ekzhu.com/datasketch/minhash.html) for estimating the [Jaccard similarity](https://en.wikipedia.org/wiki/Jaccard_index) between the transcription and the lyrics of a selection of songs. The song which had the highest estimated Jaccard similarity with the transcription was chosen as the song identification guess.
 
 ## Discussion of our Approach
-One technical challenge we had to face during training was our limited GPU access, as we needed a GPU to train our model. To counter this problem, we regularly checkpointed our model weights so we could resume model training from these checkpoints in case we lost access to our GPU. Nevertheless, this circumstance limited the extent to which we could perform experiments for model optimization.
+One technical challenge we had to face during training was our limited GPU access, as we needed a GPU to train our model. To counter this problem, we regularly checkpointed our model weights so we could resume model training from these checkpoints in case we lost access to our GPU. Nevertheless, this circumstance limited the extent to which we could perform experiments for model optimization. 
 
 One limitation to consider regarding the app we created to automatically identify Swedish Christmas songs is that we only used a selection of Swedish Christmas songs. Thus, if a user sings a song not included in our selection, our app is not able to identify it correctly. The songs were manually chosen based on what Swedish Christmas songs are generally popular and the lyrics for the songs were gathered from various sources that appeared from Google Search results, many song lyrics were for example collected from the following website [julsånger.se](https://www.xn--julsnger-d0a.se/).
 
@@ -72,6 +72,8 @@ Another limitation is that the MinHashing method is not guranteed to provide a g
 - Google Colab was used as the environment for running the pipelines
 - Google Drive was used as the feature store to store training data
 - For running the `song_guesser.py` program (used in Hugging Face app) the [`datasketch`](https://ekzhu.com/datasketch/index.html) library is necessary
+
+## Dependencies and Installing (not sure if necessary)
 
 ## Authors
 Samuel Härner\

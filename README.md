@@ -12,7 +12,10 @@ In this assignment, we fine-tuned a pre-trained transformer model (Whisper small
 In order to improve the performance of our model, we performed experiments with model-centric optimization techniques and with data-centric optimization techniques. 
 To be able to compare our experimental results, we created a baseline model with the following configurations:
 
-- lr = 1e-5, scheduler: linear, warmup steps = 200, dropout = 0.0, training steps = 1000: **WER** = 63.24 
+- lr = 1e-5, scheduler: linear, warmup steps = 200, dropout = 0.0, training steps = 1000
+| Checkpoint |200|400|600|800|1000|
+|---|---|---|---|---|---|
+|WER|59.32|60.32|46.04|47.68|63.25|
 
 ### Model-centric Optimization
 As part of the model-centric optimization, we experimented with the following techniques:
@@ -37,8 +40,16 @@ For the data-centric approach, we performed an experiment with a combination of 
 based on the article [Fine-Tuning Whisper ASR Models](https://wandb.ai/parambharat/whisper_finetuning/reports/Fine-Tuning-Whisper-ASR-Models---VmlldzozMTEzNDE5) by Bharat Ramanathan.
 
   **Experiments and Results with Augmented Data**
-  - lr = 1e-5, scheduler: linear, warmup steps = 200, dropout = 0.0, training steps = 1000: **WER** = 65.20
-  - lr=1e-4, scheduler: linear, warmup steps = 10, dropout = 0.1, training steps = 1000: **WER** = 27.40
+  - lr = 1e-5, scheduler: linear, warmup steps = 200, dropout = 0.0, training steps = 1000
+| Checkpoint |500|1000|
+|---|---|---|
+|WER|47.91|65.20|
+
+  - lr=1e-4, scheduler: linear, warmup steps = 10, dropout = 0.1, training steps = 1000
+| Checkpoint |200|400|600|800|1000|
+|---|---|---|---|---|---|
+|WER |45.30|37.32|31.74|27.40|31.09|
+ 
 
 
 

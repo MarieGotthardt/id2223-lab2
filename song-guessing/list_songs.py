@@ -9,6 +9,6 @@ class ListSongs:
             songs = json.load(f)
             
             for song in songs:
-                list_output += "- " + song['name'][:-4].replace("_", " ") + "\n"
+                list_output += "- " + song['name'] + "\n"
 
         return list_output.strip()

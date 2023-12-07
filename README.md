@@ -13,9 +13,9 @@ In order to improve the performance of our model, we performed experiments with 
 To be able to compare our experimental results, we created a baseline model with the following configurations:
 
 - lr = 1e-5, scheduler: linear, warmup steps = 200, dropout = 0.0, training steps = 1000
-| Checkpoint |200|400|600|800|1000|
-|---|---|---|---|---|---|
-|WER|59.32|60.32|46.04|47.68|63.25|
+| Checkpoint |200  |400  |600  |800  |1000 |
+|------------|-----|-----|-----|-----|-----|
+|WER         |59.32|60.32|46.04|47.68|63.25|
 
 ### Model-centric Optimization
 As part of the model-centric optimization, we experimented with the following techniques:

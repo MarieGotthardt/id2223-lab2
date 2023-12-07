@@ -12,7 +12,7 @@ In this assignment, we fine-tuned a pre-trained transformer model (Whisper small
 In order to improve the performance of our model, we performed experiments with model-centric optimization techniques and with data-centric optimization techniques. 
 To be able to compare our experimental results, we created a baseline model with the following configurations:
 
-- lr = 1e-5, scheduler: linear, warmup steps = 200, dropout = 0.0, training steps = 1000, WER = 63.24 
+- lr = 1e-5, scheduler: linear, warmup steps = 200, dropout = 0.0, training steps = 1000: **WER** = 63.24 
 
 As part of the model-centric optimization, we experimented with the following techniques:
 - adding dropout (dropout = 0.1)
@@ -21,11 +21,11 @@ As part of the model-centric optimization, we experimented with the following te
 - using different numbers of warmup steps (10, 20, 200)
 
 
-  **Experiments and Results**
-- lr = 1e-4, lr scheduler: linear, warmup steps = 10, dropout = 0.0, training steps= 200: WER = 23.95
-- lr = 1e-5, lr scheduler: linear, warmup steps = 20, dropout = 0.1, training steps = 200: WER = 25.53
-- lr = 1e-4. lr scheduler: cosine with hard restarts, warmup steps = 200, dropout = 0.0, training steps = 1000, WER = 103.39
-- lr = 1e-4, lr scheduler: linear, warum steps = 10, dropout = 0.1, training steps = 800, WER = 27.87
+**Experiments and Results**
+- lr = 1e-4, lr scheduler: linear, warmup steps = 10, dropout = 0.0, training steps= 200: **WER** = 23.95
+- lr = 1e-5, lr scheduler: linear, warmup steps = 20, dropout = 0.1, training steps = 200: **WER** = 25.53
+- lr = 1e-4. lr scheduler: cosine with hard restarts, warmup steps = 200, dropout = 0.0, training steps = 1000: **WER** = 103.39
+- lr = 1e-4, lr scheduler: linear, warum steps = 10, dropout = 0.1, training steps = 800: **WER** = 27.87
 
 For the data-centric approach, we performed an experiment with a combination of the following data augmentations:
 - Gaussian noise
@@ -35,8 +35,8 @@ For the data-centric approach, we performed an experiment with a combination of 
 based on the article [Fine-Tuning Whisper ASR Models](https://wandb.ai/parambharat/whisper_finetuning/reports/Fine-Tuning-Whisper-ASR-Models---VmlldzozMTEzNDE5) by Bharat Ramanathan.
 
   **Experiments and Results with Augmented Data**
-  - lr = 1e-5, scheduler: linear, warmup steps = 200, dropout = 0.0, training steps = 1000, WER = 65.20
-  - lr=1e-4, scheduler: linear, warmup steps = 10, dropout = 0.1, training steps = 1000, WER = 27.40
+  - lr = 1e-5, scheduler: linear, warmup steps = 200, dropout = 0.0, training steps = 1000: **WER** = 65.20
+  - lr=1e-4, scheduler: linear, warmup steps = 10, dropout = 0.1, training steps = 1000: **WER** = 27.40
 
 
 

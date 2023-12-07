@@ -27,12 +27,42 @@ For the data-centric approach, we performed an experiment with a combination of 
 based on the article [Fine-Tuning Whisper ASR Models](https://wandb.ai/parambharat/whisper_finetuning/reports/Fine-Tuning-Whisper-ASR-Models---VmlldzozMTEzNDE5) by Bharat Ramanathan.
 
 ## Utilization of our Model: Recognition of Swedish Christmas Songs
-To demonstrate how users could utilize our fine-tuned model to automatically create transcriptions for Swedish, we created an app that can automatically identify Swedish Christmas songs based on the created transcriptions.  
+To demonstrate how users could utilize our fine-tuned model to automatically create transcriptions for Swedish, we created an app that can automatically identify Swedish Christmas songs based on the created transcriptions.
 
 ## Discussion of our Approach
-One technical challenge we had to face during training was our limited GPU access, as we needed a GPU to train our model. To counter this problem, we regularly checkpointed our model weights so we could resume model training from these checkpoints in case we lost access to our GPU. Nevertheless, this circumstance limited the extent to which we could perform experiments for model optimization. 
+One technical challenge we had to face during training was our limited GPU access, as we needed a GPU to train our model. To counter this problem, we regularly checkpointed our model weights so we could resume model training from these checkpoints in case we lost access to our GPU. Nevertheless, this circumstance limited the extent to which we could perform experiments for model optimization.
 
-One limitation to consider regarding the app we created to automatically identify Swedish Christmas songs is that we only used a selection of Swedish Christmas songs. Thus, if a user sings a song not included in our selection, our app is not able to identify it correctly. 
+One limitation to consider regarding the app we created to automatically identify Swedish Christmas songs is that we only used a selection of Swedish Christmas songs. Thus, if a user sings a song not included in our selection, our app is not able to identify it correctly.
+
+Selected songs:
+- Bella notte
+- Bjällerklang
+- Den vintertid nu kommer
+- Det strålar en stjärna
+- Gläns över sjö och strand
+- Halleluja
+- Hej mitt vinterland
+- Hej tomtegubbar
+- Jag drömmer om en jul hemma
+- Jag såg mamma kyssa tomten
+- Jul jul strålande jul
+- Julbocken
+- Mer jul
+- Mössens julafton
+- Nu tändas tusen juleljus
+- Nu är det jul igen
+- O helga natt
+- Rudolph med röda mulen
+- Sankta Lucia
+- Sockerbagaren
+- Stad i ljus
+- Staffan var en stalledräng
+- Staffansvisan
+- Stilla Natt
+- Tomtarnas julnatt
+- Tomten jag vill ha en riktig jul
+- Tre pepparkaksgubbar
+- Tänd ett ljus
 
 ## Dependencies and Installing (not sure if necessary)
 

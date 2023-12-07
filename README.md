@@ -34,9 +34,9 @@ The identification of songs was done by using [MinHashing](https://ekzhu.com/dat
 ## Discussion of our Approach
 One technical challenge we had to face during training was our limited GPU access, as we needed a GPU to train our model. To counter this problem, we regularly checkpointed our model weights so we could resume model training from these checkpoints in case we lost access to our GPU. Nevertheless, this circumstance limited the extent to which we could perform experiments for model optimization. 
 
-One limitation to consider regarding the app we created to automatically identify Swedish Christmas songs is that we only used a selection of Swedish Christmas songs. Thus, if a user sings a song not included in our selection, our app is not able to identify it correctly. 
+One limitation to consider regarding the app we created to automatically identify Swedish Christmas songs is that we only used a selection of Swedish Christmas songs. Thus, if a user sings a song not included in our selection, our app is not able to identify it correctly. The songs were manually chosen based on what Swedish Christmas songs are generally popular and the lyrics for the songs were gathered from various sources that appeared from Google Search results, many song lyrics were for example collected from the following website [julsånger.se](https://www.xn--julsnger-d0a.se/).
 
-Selected songs:
+Songs in our selection:
 - Bella notte
 - Bjällerklang
 - Den vintertid nu kommer
@@ -66,14 +66,12 @@ Selected songs:
 - Tre pepparkaksgubbar
 - Tänd ett ljus
 
-
 Another limitation is that the MinHashing method is not guranteed to provide a good guess for the song the user sang as it may provide incorrect guesses even if the user sings a song that is in our selection, however, the user can increase the likelihood of a correct guess by singing more clearly and singing more of the song lyrics.
 
 ## Development Environment
 - Google Colab was used as the environment for running the pipelines
 - Google Drive was used as the feature store to store training data
 - For running the `song_guesser.py` program (used in Hugging Face app) the [`datasketch`](https://ekzhu.com/datasketch/index.html) library is necessary
-
 
 ## Dependencies and Installing (not sure if necessary)
 
@@ -85,5 +83,6 @@ Marie Gotthardt
 [Blogpost: Fine-Tune Whisper For Multilingual ASR with 🤗 Transformers](https://huggingface.co/blog/fine-tune-whisper) \
 [Article: Fine-Tuning Whisper ASR Models](https://wandb.ai/parambharat/whisper_finetuning/reports/Fine-Tuning-Whisper-ASR-Models---VmlldzozMTEzNDE5) \
 [Documentation: MinHash in datasketch library](https://ekzhu.com/datasketch/minhash.html) \
-[Article: Jaccard similarity](https://en.wikipedia.org/wiki/Jaccard_index) 
+[Article: Jaccard similarity](https://en.wikipedia.org/wiki/Jaccard_index) \
+[Website: Swedish Christmas songs (julsånger.se)](https://www.xn--julsnger-d0a.se/)
 

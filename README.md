@@ -42,11 +42,13 @@ based on the article [Fine-Tuning Whisper ASR Models](https://wandb.ai/parambhar
 
   **Experiments and Results with Augmented Data**
   - lr = 1e-5, scheduler: linear, warmup steps = 200, dropout = 0.0, training steps = 1000
+    
 | Checkpoint |500|1000|
 |---|---|---|
 |WER|47.91|65.20|
 
   - lr=1e-4, scheduler: linear, warmup steps = 10, dropout = 0.1, training steps = 1000
+    
 | Checkpoint |200|400|600|800|1000|
 |---|---|---|---|---|---|
 |WER |45.30|37.32|31.74|27.40|31.09|

@@ -33,14 +33,13 @@ As part of the model-centric optimization, we experimented with the following te
 |------------|-----|-----|-----|
 |WER         |70.71|25.37|23.95|
   
-- lr = 1e-5, lr scheduler: linear, warmup steps = 20, dropout = 0.1, training steps = 200: **WER** = 25.53
-- 
+- lr = 1e-5, lr scheduler: linear, warmup steps = 20, dropout = 0.1, training steps = 200
 | Checkpoint | 100 | 200| 
 |------------|-----|-----|
 |WER         |103.66|25.53|
 
 - lr = 1e-4. lr scheduler: cosine with hard restarts, warmup steps = 200, dropout = 0.0, training steps = 1000: **WER** = 103.39
-- lr = 1e-4, lr scheduler: linear, warum steps = 10, dropout = 0.1, training steps = 800:
+- lr = 1e-4, lr scheduler: linear, warum steps = 10, dropout = 0.1, training steps = 800
 
 | Checkpoint | 200 | 400 | 600 | 800 |
 |------------|-----|-----|-----|-----|

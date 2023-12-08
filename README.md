@@ -40,7 +40,7 @@ As part of the model-centric optimization, we experimented with the following te
 |WER         |103.66|25.53|
 
 - lr = 1e-4. lr scheduler: cosine with hard restarts, warmup steps = 200, dropout = 0.0, training steps = 1000: **WER** = 103.39
-- lr = 1e-4, lr scheduler: linear, warum steps = 10, dropout = 0.1, training steps = 800
+- lr = 1e-4, lr scheduler: linear, warmup steps = 10, dropout = 0.1, training steps = 800
 
 | Checkpoint | 200 | 400 | 600 | 800 |
 |------------|-----|-----|-----|-----|

@@ -46,6 +46,12 @@ As part of the model-centric optimization, we experimented with the following te
 |------------|-----|-----|-----|-----|
 |WER         |45.57|40.59|31.74|27.87|
 
+- lr = 1e-5, lr scheduler: linear, warmup steps = 20, dropout = 0.1, training steps = 800
+
+| Checkpoint | 200 | 400 | 600 | 800 |
+|------------|-----|-----|-----|-----|
+|WER         |25.21|23.69|22.66|22.10|
+
 ### Data-centric Optimization
 For the data-centric approach, we performed an experiment with a combination of the following data augmentations:
 - Gaussian noise

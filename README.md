@@ -6,7 +6,7 @@ In this assignment, we fine-tuned a pre-trained transformer model (Whisper small
 
 - Feature Pipeline (only requires CPU)
 - Training Pipeline (requires GPU)
-- Inference Program (run as an app in a Hugging Face Space [see](https://huggingface.co/spaces/SamuelHarner/whisper-swedish))
+- Inference Program (run as an app in a Hugging Face Space which you can fine [here](https://huggingface.co/spaces/SamuelHarner/whisper-swedish))
 
 ## Experiments for Performance Optimization
 In order to improve the performance of our model, we performed experiments with model-centric optimization techniques and with data-centric optimization techniques. 

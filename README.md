@@ -123,8 +123,6 @@ Another limitation is that the MinHashing method is not guranteed to provide a g
 - Google Drive was used as the feature store to store training data
 - For running the `song_guesser.py` program (used in Hugging Face app) the [`datasketch`](https://ekzhu.com/datasketch/index.html) library is necessary
 
-## Dependencies and Installing (not sure if necessary)
-
 ## Authors
 Samuel Härner\
 Marie Gotthardt

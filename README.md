@@ -133,7 +133,7 @@ Marie Gotthardt
 [Article: Fine-Tuning Whisper ASR Models](https://wandb.ai/parambharat/whisper_finetuning/reports/Fine-Tuning-Whisper-ASR-Models---VmlldzozMTEzNDE5) \
 [Documentation: MinHash in datasketch library](https://ekzhu.com/datasketch/minhash.html) \
 [Article: Jaccard similarity](https://en.wikipedia.org/wiki/Jaccard_index) \
-[Website: Swedish Christmas songs (julsånger.se)](https://www.xn--julsnger-d0a.se/)
+[Website: Swedish Christmas songs (julsånger.se)](https://www.xn--julsnger-d0a.se/) \
 [Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-custom-speech-evaluate-data?pivots=speech-studio)
-[Papers With Code: Automatic Speech Recognition on mozilla-foundation/common_voice_11_0 sv-SE](https://paperswithcode.com/sota/automatic-speech-recognition-on-mozilla-75
+[Papers With Code: Automatic Speech Recognition on mozilla-foundation/common_voice_11_0 sv-SE](https://paperswithcode.com/sota/automatic-speech-recognition-on-mozilla-75) \
 [Papers With Code: Speech Recognition on Common Voice Swedish](https://paperswithcode.com/sota/speech-recognition-on-common-voice-swedish)

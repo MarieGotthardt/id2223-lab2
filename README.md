@@ -72,6 +72,12 @@ based on the article [Fine-Tuning Whisper ASR Models](https://wandb.ai/parambhar
 | Checkpoint |200|400|600|800|1000|
 |---|---|---|---|---|---|
 |WER |45.30|37.32|31.74|27.40|31.09|
+
+**Parameter Settings and Results of the Best Performing Model**
+ - lr=1e-5, scheduler: linear, warmup steps = 20, dropout = 0.1, training steps = 1600
+| Checkpoint |200|400|600|800|1000|1200|1400|1600|
+|---|---|---|---|---|---|---|---|---|---|
+|WER |25.21|23.69|22.66|22.10|22.34|22.30|21.91|21.76|
  
 
 ## Utilization of our Model: Recognition of Swedish Christmas Songs

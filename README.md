@@ -74,14 +74,15 @@ based on the article [Fine-Tuning Whisper ASR Models](https://wandb.ai/parambhar
 |WER |45.30|37.32|31.74|27.40|31.09|
  
 
-
-
 ## Utilization of our Model: Recognition of Swedish Christmas Songs
 To demonstrate how users could utilize our fine-tuned model to automatically create transcriptions for Swedish, we created an app that can automatically identify Swedish Christmas songs based on the created transcriptions.
 
 The identification of songs was done by using [MinHashing](https://ekzhu.com/datasketch/minhash.html) for estimating the [Jaccard similarity](https://en.wikipedia.org/wiki/Jaccard_index) between the transcription and the lyrics of a selection of songs. The song which had the highest estimated Jaccard similarity with the transcription was chosen as the song identification guess.
 
-## Discussion of our Approach
+## Discussion of our Results and Approach
+By using different optimization techniques, we were able to considerably improve the WER (best WER = TODO) compared to our baseline model (best WER = 46.04). According to [Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-custom-speech-evaluate-data?pivots=speech-studio), a WER of ~ 20% is acceptable for speech to text models although further improvements or more training should be considered. 
+When comparing our results to other results on the Swedish common voice dataset achieved by different Whisper models ([Papers With Code: Automatic Speech Recognition on mozilla-foundation/common_voice_11_0 sv-SE](https://paperswithcode.com/sota/automatic-speech-recognition-on-mozilla-75)), we can see that we perform considerably better than the Whisper Small Swedish Fast (WER = 62.69) and the Whisper Tiny Swedish (44.19) but worse than the Whsiper Medium Sv (WER = 10.712). Furthermore, compared to other state-of-the-art models trained on the Swedish common voice dataset ([Papers With Code: Speech Recognition on Common Voice Swedish](https://paperswithcode.com/sota/speech-recognition-on-common-voice-swedish)), the performance of our model can be considered average. 
+
 One technical challenge we had to face during training was our limited GPU access, as we needed a GPU to train our model. To counter this problem, we regularly checkpointed our model weights so we could resume model training from these checkpoints in case we lost access to our GPU. Nevertheless, this circumstance limited the extent to which we could perform experiments for model optimization. 
 
 One limitation to consider regarding the app we created to automatically identify Swedish Christmas songs is that we only used a selection of Swedish Christmas songs. Thus, if a user sings a song not included in our selection, our app is not able to identify it correctly. The songs were manually chosen based on what Swedish Christmas songs are generally popular and the lyrics for the songs were gathered from various sources that appeared from Google Search results, many song lyrics were for example collected from the following website [julsånger.se](https://www.xn--julsnger-d0a.se/).
@@ -116,7 +117,7 @@ Songs in our selection:
 - Tre pepparkaksgubbar
 - Tänd ett ljus
 
-Another limitation is that the MinHashing method is not guranteed to provide a good guess for the song the user sang as it may provide incorrect guesses even if the user sings a song that is in our selection, however, the user can increase the likelihood of a correct guess by singing more clearly and singing more of the song lyrics.
+Another limitation is that the MinHashing method is not guaranteed to provide a good guess for the song the user sang as it may provide incorrect guesses even if the user sings a song that is in our selection, however, the user can increase the likelihood of a correct guess by singing more clearly and singing more of the song lyrics.
 
 ## Development Environment
 - Google Colab was used as the environment for running the pipelines
@@ -133,4 +134,6 @@ Marie Gotthardt
 [Documentation: MinHash in datasketch library](https://ekzhu.com/datasketch/minhash.html) \
 [Article: Jaccard similarity](https://en.wikipedia.org/wiki/Jaccard_index) \
 [Website: Swedish Christmas songs (julsånger.se)](https://www.xn--julsnger-d0a.se/)
-
+[Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-custom-speech-evaluate-data?pivots=speech-studio)
+[Papers With Code: Automatic Speech Recognition on mozilla-foundation/common_voice_11_0 sv-SE](https://paperswithcode.com/sota/automatic-speech-recognition-on-mozilla-75
+[Papers With Code: Speech Recognition on Common Voice Swedish](https://paperswithcode.com/sota/speech-recognition-on-common-voice-swedish)
